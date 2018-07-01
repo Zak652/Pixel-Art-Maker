@@ -19,7 +19,6 @@ function makeGrid(event){
 
     // First remove grid if any
     $('tr').remove();
-    $('#canvas').removeClass();
 
     // Identify grid area
     var grid = $('#pixelCanvas');
@@ -37,7 +36,6 @@ function makeGrid(event){
                 $('td').attr('class', 'pixel');
                 }
             }
-        $('#canvas').attr('class', 'canvas-wrapper');
         event.preventDefault();
 
         // Pixel painting
